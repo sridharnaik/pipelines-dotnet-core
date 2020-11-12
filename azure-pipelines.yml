@@ -16,7 +16,7 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
   
- steps:
+steps:
  - task: DotNetCoreCLI@2
    inputs:
     command: publish
